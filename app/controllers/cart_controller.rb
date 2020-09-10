@@ -39,12 +39,13 @@ class CartController < ApplicationController
         search_url += query
       end
     end
+    cookies.delete :saved_food_ids
     redirect_to search_url
   end
 
   private
 
   def split_saved_food_ids_to_food_ids(saved_food_ids:)
-    saved_food_ids.split(',').map(&:to_i).uniq
+    saved_food_ids.split(',').map(&:to_i).uniq if saved_food_ids
   end
 end
