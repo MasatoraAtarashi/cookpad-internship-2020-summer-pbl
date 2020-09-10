@@ -1,2 +1,28 @@
-<h1>Foods#show</h1>
-<p>Find me in app/views/foods/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<% if @food.picture.present? %>
+<p>
+  <strong>画像:</strong>
+  <%= picture_tag(picture_path(@food.picture)) %>
+</p>
+<% end %>
+
+<p>
+  <strong>タイトル:</strong>
+  <%= @food.name %>
+</p>
+
+<p>
+  <strong>タンパク質:</strong>
+  <%= @food.protein %>
+</p>
+
+<p>
+  <strong>脂肪:</strong>
+  <%= @food.fat %>
+</p>
+
+<p>
+  <strong>炭水化物:</strong>
+  <%= @food.carbohydrate %>
+</p>
