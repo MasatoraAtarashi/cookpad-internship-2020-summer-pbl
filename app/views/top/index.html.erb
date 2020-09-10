@@ -1,7 +1,5 @@
 <h1>食材から同等の栄養価を持つ食材を検索</h1>
-
-<h1>検索フォーム・ボタンを設置</h1>
-
+<%= render 'layouts/search_form' %>
 <table>
   <% if @foods.nil? %>
     <tr><td>検索結果: なし</td></tr>
