@@ -33,7 +33,7 @@ Food.create!(
 Food.create!(
   name: "ブロッコリー", 
   picture: picture_cookpad, 
-  protein: 40, 
+  protein: 5.4, 
   carbohydrate: 1.5,
   lipid: 0.6, 
   vitamin: 0.3

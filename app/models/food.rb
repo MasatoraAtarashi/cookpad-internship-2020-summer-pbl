@@ -19,8 +19,9 @@ class Food < ApplicationRecord
 
   def calculate_nutrition_score(food1:, food2:)
     abs_protein = (food1.protein - food2.protein).abs
-    abs_lipid = (food1.lipid - food2.lipid).abs
     abs_carbohydrate = (food1.carbohydrate - food2.carbohydrate).abs
+    abs_lipid = (food1.lipid - food2.lipid).abs
+    abs_vitamin = (food1.vitamin - food2.vitamin).abs
     sum_of_abs = [abs_protein, abs_lipid, abs_carbohydrate].sum
   end
 end
