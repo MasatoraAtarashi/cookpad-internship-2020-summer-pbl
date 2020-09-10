@@ -4,8 +4,9 @@ class CreateFoods < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :picture
       t.float :protein
-      t.float :fat
+      t.float :lipid
       t.float :carbohydrate
+      t.float :vitamin
 
       t.timestamps
     end
