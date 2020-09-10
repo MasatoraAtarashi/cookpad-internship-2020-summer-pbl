@@ -1,8 +1,9 @@
 class Food < ApplicationRecord
   def return_similer_foods
     similer_foods = []
-    Food.all.each do |candidate_food|
+    Food.all.find_each do |candidate_food|
       next if self.id == candidate_food.id
+
       if similer?(food1: self, food2: candidate_food)
         similer_foods << candidate_food
       end

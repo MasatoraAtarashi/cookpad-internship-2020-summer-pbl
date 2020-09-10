@@ -3,7 +3,7 @@
 <% if @food.picture.present? %>
 <p>
   <strong>画像:</strong>
-  <%= picture_tag(picture_path(@food.picture)) %>
+  <%= image_tag @food.picture %>
 </p>
 <% end %>
 
