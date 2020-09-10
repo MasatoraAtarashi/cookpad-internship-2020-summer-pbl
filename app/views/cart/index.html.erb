@@ -16,9 +16,11 @@
         <td>糖質: <%= food.carbohydrate %></td>
         <td>脂質: <%= food.lipid %></td>
         <td>ビタミン: <%= food.vitamin %></td>
-        <td><%= button_to 'カートに追加', cart_index_path(id: food.id) %></td>
+        <%# カートから削除ボタンを作成 %>
+        <td><%= button_to "カートから削除", {:controller => :cart, :action => 'destroy', :food_id => food.id}, :method => :delete %></td>
       </tr>
     <% end %>
   <% end %>
 </table>
 <%= button_to "カートを空にする", {:controller => :cart, :action => 'destroy'}, :method => :delete %>
+<%= button_to '選択した食材を使用したレシピをクックパッドで検索', cart_search_path() %>
