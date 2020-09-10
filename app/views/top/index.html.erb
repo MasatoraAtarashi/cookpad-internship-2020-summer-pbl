@@ -1,0 +1,23 @@
+<h1>食材から同等の栄養価を持つ食材を検索</h1>
+
+<h1>検索フォーム・ボタンを設置</h1>
+
+<table>
+  <% if @foods.nil? %>
+    <tr><td>検索結果: なし</td></tr>
+  <% else %>
+    <% @foods.each do |food| %>
+      <tr>
+        <td>
+          <% if food.picture.present? %>
+            <%= image_tag(image_path(recipe.image), height: '100px') %>
+          <% end %>
+        </td>
+        <td><%= link_to food.name, food %></td>
+        <td>protein: <%= food.protein %></td>
+        <td>fat: <%= food.fat %></td>
+        <td>carbohydrate: <%= food.carbohydrate %></td>
+      </tr>
+    <% end %>
+  <% end %>
+</table>
