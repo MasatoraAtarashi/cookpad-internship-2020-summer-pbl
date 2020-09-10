@@ -17,6 +17,7 @@
         <td>脂質: <%= food.lipid %></td>
         <td>ビタミン: <%= food.vitamin %></td>
         <%# カートから削除ボタンを作成 %>
+        <td><%= button_to "カートから削除", {:controller => :cart, :action => 'destroy', :food_id => food.id}, :method => :delete %></td>
       </tr>
     <% end %>
   <% end %>

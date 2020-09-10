@@ -17,8 +17,11 @@ class CartController < ApplicationController
   end
 
   def destroy
-    # 全削除か、指定されたやつ削除かわける
-    cookies.delete :saved_food_ids
+    if params[:food_id]
+      cookies[:saved_food_ids] = cookies[:saved_food_ids].gsub(/#{params[:food_id]},/, '')
+    else
+      cookies.delete :saved_food_ids
+    end
     redirect_to cart_index_path
   end
 
