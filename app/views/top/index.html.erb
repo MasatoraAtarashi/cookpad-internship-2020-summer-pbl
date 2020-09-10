@@ -1,9 +1,12 @@
-<h1>食材から同等の栄養価を持つ食材を検索</h1>
 <%= render 'layouts/search_form' %>
-<table>
-  <% if @foods.nil? %>
+<div class='food-table'>
+<% if @foods.nil? %>
+  <table class='nocontents'>
     <tr><td>検索結果: なし</td></tr>
-  <% else %>
-    <%= render 'layouts/index_foods' %>
-  <% end %>
-</table>
+    <tr><td>食材名を検索すると同等の栄養価を持つ食材を表示します。</td></tr>
+    <tr><td>カートに保存した食材を利用したレシピをクックパッドで検索することもできます。</td></tr>
+  </table>
+<% else %>
+  <%= render 'layouts/index_foods' %>
+<% end %>
+</div>
