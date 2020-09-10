@@ -19,8 +19,9 @@ ActiveRecord::Schema.define(version: 2020_09_10_054758) do
     t.string "name"
     t.string "picture"
     t.float "protein"
-    t.float "fat"
+    t.float "lipid"
     t.float "carbohydrate"
+    t.float "vitamin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,2 +1,16 @@
-<h1>Foods#index</h1>
-<p>Find me in app/views/foods/index.html.erb</p>
+<table>
+<% @foods.each do |food| %>
+  <tr>
+    <td>
+      <% if food.picture.present? %>
+        <%= image_tag(image_path(food.picture), height: '100px') %>
+      <% end %>
+    </td>
+    <td><%= link_to food.name, food %></td>
+    <td>タンパク質: <%= food.protein %></td>
+    <td>糖質: <%= food.carbohydrate %></td>
+    <td>脂質: <%= food.lipid %></td>
+    <td>ビタミン: <%= food.vitamin %></td>
+  </tr>
+<% end %>
+</table>

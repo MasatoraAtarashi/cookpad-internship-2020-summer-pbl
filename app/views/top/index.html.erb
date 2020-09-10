@@ -1,7 +1,5 @@
 <h1>食材から同等の栄養価を持つ食材を検索</h1>
-
-<h1>検索フォーム・ボタンを設置</h1>
-
+<%= render 'layouts/search_form' %>
 <table>
   <% if @foods.nil? %>
     <tr><td>検索結果: なし</td></tr>
@@ -10,13 +8,14 @@
       <tr>
         <td>
           <% if food.picture.present? %>
-            <%= image_tag(image_path(recipe.image), height: '100px') %>
+            <%= image_tag(image_path(food.picture), height: '100px') %>
           <% end %>
         </td>
         <td><%= link_to food.name, food %></td>
-        <td>protein: <%= food.protein %></td>
-        <td>fat: <%= food.fat %></td>
-        <td>carbohydrate: <%= food.carbohydrate %></td>
+        <td>タンパク質: <%= food.protein %></td>
+        <td>糖質: <%= food.carbohydrate %></td>
+        <td>脂質: <%= food.lipid %></td>
+        <td>ビタミン: <%= food.vitamin %></td>
       </tr>
     <% end %>
   <% end %>
