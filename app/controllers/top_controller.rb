@@ -4,7 +4,10 @@ class TopController < ApplicationController
       food = Food.find_by(name: food_name)
       @foods = food.return_similer_foods
     else
-      # TODO 検索した食材が存在しないことをユーザーに伝える？？
+      unless params[:query].nil?
+        flash.now[:alert] = 'メッセージを入力してください。'
+        render :index
+      end
     end
   end
 
@@ -47,7 +50,7 @@ class TopController < ApplicationController
       return 'オクラ'
     else
       # TODO: return falseに戻す
-      return name
+      return false
     end
   end
 end

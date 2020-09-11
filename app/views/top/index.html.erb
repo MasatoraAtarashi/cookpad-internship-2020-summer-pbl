@@ -1,3 +1,6 @@
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-danger"><%= message %></div>
+<% end %>
 <%= render 'layouts/search_form' %>
 <div class='food-table'>
 <% if @foods.nil? %>
