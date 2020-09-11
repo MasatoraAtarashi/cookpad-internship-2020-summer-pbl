@@ -3,7 +3,7 @@
   <tr>
     <td>
       <% if food.picture.present? %>
-        <%= image_tag(image_path(food.picture), height: '100px') %>
+        <%= image_tag(image_path(food.picture), height: '150px', width: '150px') %>
       <% end %>
     </td>
     <td><%= link_to food.name, food %></td>
