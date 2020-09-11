@@ -13,10 +13,41 @@ class TopController < ApplicationController
   def food_name_aggregation(name:)
     if %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
       return "アスパラガス"
-    elsif
-      puts 'a'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
+    elsif %w(アスパラガス あすぱらがす asuparagasu アスパラ あすぱら asupara 明日ぱら).include?(name)
+      return 'オクラ'
     else
-      return false
+      # TODO: return falseに戻す
+      return name
     end
   end
 end

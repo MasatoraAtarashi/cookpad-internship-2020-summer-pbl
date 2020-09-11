@@ -6,8 +6,6 @@ class Food < ApplicationRecord
   def return_similer_foods
     similer_foods = {}
     Food.all.find_each do |candidate_food|
-      # TODO: 自分自身を表示すべきか？
-      # next if self.id == candidate_food.id
       score = calculate_nutrition_score(food1: self, food2: candidate_food)
       if score <= STANDARD_SCORE
         similer_foods[score] = candidate_food
