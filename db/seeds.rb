@@ -3,6 +3,8 @@ picture_cookpad = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBx
 
 # 引用: グリコ栄養成分ナビゲーター(https://jp.glico.com/navi/index.html)
 # 100gあたり
+# この記事にある、筋トレに良い食べ物一覧はすべて網羅している。https://cp.glico.jp/powerpro/training/entry83/
+# 手作業・画像はGoogle画像検索API・スクレイピングはできるか微妙
 Food.create!(
   name: "アスパラガス", 
   picture: picture_cookpad, 
@@ -55,4 +57,368 @@ Food.create!(
   carbohydrate: 0.2,
   lipid: 5.3, 
   vitamin: 0.52
+)
+
+# ご飯 パン 麺 もち かぼちゃ れんこん とうもろこし (肉類) (魚類) ナッツ ごま ごぼう 牛ヒレ 卵 するめ　豆乳 チーズ　大豆 ヨーグルト ねぎ 納豆 しらす たら キャベツ
+# (肉類)
+Food.create!(
+  name: "牛ヒレ肉", 
+  picture: picture_cookpad, 
+  protein: 22.0, 
+  carbohydrate: 0.7,
+  lipid: 6.1, 
+  vitamin: 0.34
+)
+
+Food.create!(
+  name: "馬肉", 
+  picture: picture_cookpad, 
+  protein: 20.1, 
+  carbohydrate: 0.3,
+  lipid: 2.5, 
+  vitamin: 0.02
+)
+
+
+Food.create!(
+  name: "くじら肉", 
+  picture: picture_cookpad, 
+  protein: 24.1, 
+  carbohydrate: 0.2,
+  lipid: 0.4, 
+  vitamin: 0.56
+)
+
+
+Food.create!(
+  name: "豚バラ肉", 
+  picture: picture_cookpad, 
+  protein: 14.4, 
+  carbohydrate: 0.1,
+  lipid: 35.4, 
+  vitamin: 0.72
+)
+
+
+Food.create!(
+  name: "豚ひき肉", 
+  picture: picture_cookpad, 
+  protein: 17.7, 
+  carbohydrate: 0.1,
+  lipid: 17.2, 
+  vitamin: 0.76
+)
+
+
+Food.create!(
+  name: "ソーセージ", 
+  picture: picture_cookpad, 
+  protein: 11.5, 
+  carbohydrate: 2.3,
+  lipid: 30.6, 
+  vitamin: 0.54
+)
+
+
+Food.create!(
+  name: "ラム肉", 
+  picture: picture_cookpad, 
+  protein: 17.1, 
+  carbohydrate: 0.1,
+  lipid: 17.1, 
+  vitamin: 1.02
+)
+
+# (魚類)
+Food.create!(
+  name: "あじ", 
+  picture: picture_cookpad, 
+  protein: 19.7, 
+  carbohydrate: 0.1,
+  lipid: 4.5, 
+  vitamin: 9.2
+)
+
+Food.create!(
+  name: "いわし", 
+  picture: picture_cookpad, 
+  protein: 21.3, 
+  carbohydrate: 0.3,
+  lipid: 4.8, 
+  vitamin: 9.55
+)
+
+Food.create!(
+  name: "かつお", 
+  picture: picture_cookpad, 
+  protein: 25.8, 
+  carbohydrate: 0.1,
+  lipid: 0.5, 
+  vitamin: 4.76
+)
+
+Food.create!(
+  name: "サケ", 
+  picture: picture_cookpad, 
+  protein: 21.7, 
+  carbohydrate: 0.1,
+  lipid: 6.6, 
+  vitamin: 22.49
+)
+
+Food.create!(
+  name: "さば", 
+  picture: picture_cookpad, 
+  protein: 20.6, 
+  carbohydrate: 0.3,
+  lipid: 16.8, 
+  vitamin: 5.69
+)
+
+Food.create!(
+  name: "さんま", 
+  picture: picture_cookpad, 
+  protein: 18.1, 
+  carbohydrate: 0.1,
+  lipid: 25.6, 
+  vitamin: 16.1
+)
+
+Food.create!(
+  name: "マグロ", 
+  picture: picture_cookpad, 
+  protein: 24.3, 
+  carbohydrate: 0.0,
+  lipid: 1.0, 
+  vitamin: 6.64
+)
+
+Food.create!(
+  name: "えび", 
+  picture: picture_cookpad, 
+  protein: 19.8, 
+  carbohydrate: 0.1,
+  lipid: 1.5, 
+  vitamin: 0.04
+)
+
+Food.create!(
+  name: "いか", 
+  picture: picture_cookpad, 
+  protein: 17.9, 
+  carbohydrate: 0.0,
+  lipid: 1.5, 
+  vitamin: 0.10
+)
+
+Food.create!(
+  name: "たこ", 
+  picture: picture_cookpad, 
+  protein: 14.6, 
+  carbohydrate: 0.1,
+  lipid: 0.8, 
+  vitamin: 0.11
+)
+
+# ご飯 パン 麺 とうもろこし
+Food.create!(
+  name: "食パン", 
+  picture: picture_cookpad, 
+  protein: 8.9, 
+  carbohydrate: 42.2,
+  lipid: 4.1, 
+  vitamin: 0.03
+)
+
+Food.create!(
+  name: "スパゲッティ", 
+  picture: picture_cookpad, 
+  protein: 12.9, 
+  carbohydrate: 67.7,
+  lipid: 1.8, 
+  vitamin: 0.11
+)
+
+Food.create!(
+  name: "米", 
+  picture: picture_cookpad, 
+  protein: 6.8, 
+  carbohydrate: 71.3,
+  lipid: 2.7, 
+  vitamin: 0.45
+)
+
+Food.create!(
+  name: "とうもろこし", 
+  picture: picture_cookpad, 
+  protein: 8.6, 
+  carbohydrate: 61.6,
+  lipid: 5.0, 
+  vitamin: 0.39
+)
+
+# 大豆 納豆 グリーンピース
+Food.create!(
+  name: "グリーンピース", 
+  picture: picture_cookpad, 
+  protein: 20.8, 
+  carbohydrate: 39.2,
+  lipid: 11.6, 
+  vitamin: 0.17
+)
+
+Food.create!(
+  name: "大豆", 
+  picture: picture_cookpad, 
+  protein: 33.8, 
+  carbohydrate: 8.0,
+  lipid: 19.7, 
+  vitamin: 0.51
+)
+
+Food.create!(
+  name: "納豆", 
+  picture: picture_cookpad, 
+  protein: 16.5, 
+  carbohydrate: 5.4,
+  lipid: 10.0, 
+  vitamin: 0.24
+)
+
+# かぼちゃ れんこん ごぼう ねぎ キャベツ
+Food.create!(
+  name: "かぼちゃ", 
+  picture: picture_cookpad, 
+  protein: 1.6, 
+  carbohydrate: 8.1,
+  lipid: 0.1, 
+  vitamin: 0.12
+)
+
+Food.create!(
+  name: "ごぼう", 
+  picture: picture_cookpad, 
+  protein: 1.8, 
+  carbohydrate: 9.7,
+  lipid: 0.1, 
+  vitamin: 0.10
+)
+
+Food.create!(
+  name: "ねぎ", 
+  picture: picture_cookpad, 
+  protein: 1.4, 
+  carbohydrate: 5.8,
+  lipid: 0.1, 
+  vitamin: 0.12
+)
+
+Food.create!(
+  name: "キャベツ", 
+  picture: picture_cookpad, 
+  protein: 5.7, 
+  carbohydrate: 4.4,
+  lipid: 0.1, 
+  vitamin: 0.27
+)
+
+Food.create!(
+  name: "れんこん", 
+  picture: picture_cookpad, 
+  protein: 1.9, 
+  carbohydrate: 13.5,
+  lipid: 0.1, 
+  vitamin: 0.09
+)
+
+# もち ナッツ チーズ ヨーグルト しらす たら
+Food.create!(
+  name: "牛乳", 
+  picture: picture_cookpad, 
+  protein: 3.3, 
+  carbohydrate: 4.8,
+  lipid: 3.8, 
+  vitamin: 0.33
+)
+
+Food.create!(
+  name: "ヨーグルト", 
+  picture: picture_cookpad, 
+  protein: 3.6, 
+  carbohydrate: 4.9,
+  lipid: 3.0, 
+  vitamin: 0.04
+)
+
+Food.create!(
+  name: "チーズ", 
+  picture: picture_cookpad, 
+  protein: 28.9, 
+  carbohydrate: 1.4,
+  lipid: 25.0, 
+  vitamin: 0.26
+)
+
+Food.create!(
+  name: "もち", 
+  picture: picture_cookpad, 
+  protein: 4.0, 
+  carbohydrate: 50.3,
+  lipid: 0.6, 
+  vitamin: 0.03
+)
+
+Food.create!(
+  name: "ナッツ", 
+  picture: picture_cookpad, 
+  protein: 19.8, 
+  carbohydrate: 20.0,
+  lipid: 47.6, 
+  vitamin: 0.36
+)
+
+Food.create!(
+  name: "たら", 
+  picture: picture_cookpad, 
+  protein: 17.4, 
+  carbohydrate: 0.1,
+  lipid: 1.0, 
+  vitamin: 0.59
+)
+
+Food.create!(
+  name: "しらす", 
+  picture: picture_cookpad, 
+  protein: 15.0, 
+  carbohydrate: 0.1,
+  lipid: 1.3, 
+  vitamin: 6.87
+)
+
+# ごま 卵 豆乳
+Food.create!(
+  name: "卵", 
+  picture: picture_cookpad, 
+  protein: 12.4, 
+  carbohydrate: 0.4,
+  lipid: 10.7, 
+  vitamin: 5.29
+)
+
+Food.create!(
+  name: "ごま", 
+  picture: picture_cookpad, 
+  protein: 19.8, 
+  carbohydrate: 5.7,
+  lipid: 19.8, 
+  vitamin: 0.6
+)
+
+Food.create!(
+  name: "豆乳", 
+  picture: picture_cookpad, 
+  protein: 3.6, 
+  carbohydrate: 2.9,
+  lipid: 3.6, 
+  vitamin: 0.06
 )
