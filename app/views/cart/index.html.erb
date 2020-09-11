@@ -1,5 +1,4 @@
-<%# 適切な命名に治す %>
-<h1>食べ物かご</h1>
+<h1>バスケット</h1>
 <table>
   <% if @foods.nil? %>
     <tr><td>空っぽです。</td></tr>
@@ -16,11 +15,10 @@
         <td>糖質: <%= food.carbohydrate %></td>
         <td>脂質: <%= food.lipid %></td>
         <td>ビタミン: <%= food.vitamin %></td>
-        <%# カートから削除ボタンを作成 %>
-        <td><%= button_to "カートから削除", {:controller => :cart, :action => 'destroy', :food_id => food.id}, :method => :delete %></td>
+        <td><%= button_to "バスケットから削除", {:controller => :cart, :action => 'destroy', :food_id => food.id}, :method => :delete %></td>
       </tr>
     <% end %>
   <% end %>
 </table>
-<%= button_to "カートを空にする", {:controller => :cart, :action => 'destroy'}, :method => :delete %>
+<%= button_to "バスケットを空にする", {:controller => :cart, :action => 'destroy'}, :method => :delete %>
 <%= button_to '選択した食材を使用したレシピをクックパッドで検索', cart_search_path(), form: {target: '_blank'} %>
