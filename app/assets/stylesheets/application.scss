@@ -20,6 +20,10 @@ body {
   color: black;
 }
 
+a {
+  color: black;
+}
+
 .main {
   background-image: url("https://ccjportal.net/wp-content/uploads/syokuiku_1800802_main.jpg");
   background-size: 100% 100%;
@@ -28,6 +32,11 @@ body {
   text-align: center;
   margin: 0% 0%;
   padding: 10% 0%;
+  padding-left: 330px;
+
+  a {
+    color: black;
+  }
 }
 
 .header {
@@ -48,10 +57,6 @@ body {
     margin-right: 10px;
     text-align: right;
   }
-}
-
-a {
-  color: white;
 }
 
 .food-table {

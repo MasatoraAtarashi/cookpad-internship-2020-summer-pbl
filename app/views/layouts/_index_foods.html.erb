@@ -1,18 +1,18 @@
 <table>
 <% @foods.each do |food| %>
   <tr>
-    <td>
+    <td class='tdfood'>
       <% if food.picture.present? %>
         <%= image_tag(image_path(food.picture), height: '150px', width: '150px') %>
       <% end %>
     </td>
-    <td><%= link_to food.name, food %></td>
-    <td>タンパク質: <%= food.protein %></td>
-    <td>糖質: <%= food.carbohydrate %></td>
-    <td>脂質: <%= food.lipid %></td>
-    <td>ビタミン: <%= food.vitamin %></td>
+    <td class='tdfood'><%= link_to food.name, food %></td>
+    <td class='tdfood'>タンパク質: <%= food.protein %></td>
+    <td class='tdfood'>糖質: <%= food.carbohydrate %></td>
+    <td class='tdfood'>脂質: <%= food.lipid %></td>
+    <td class='tdfood'>ビタミン: <%= food.vitamin %></td>
     <%# TODO: カートに追加済みの食材は追加済みと表示する %>
-    <td><%= button_to 'カートに追加', cart_index_path(id: food.id) %></td>
+    <td class='tdfood'><%= button_to 'カートに追加', cart_index_path(id: food.id), { class: 'btn btn-warning btn-sm' }%></td>
   </tr>
 <% end %>
 </table>
