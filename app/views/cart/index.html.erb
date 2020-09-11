@@ -5,20 +5,22 @@
   <% else %>
     <% @foods.each do |food| %>
       <tr>
-        <td>
+        <td class='tdfood'>
           <% if food.picture.present? %>
-            <%= image_tag(image_path(food.picture), height: '100px') %>
+            <%= image_tag(image_path(food.picture), height: '120px', width: '120px') %>
           <% end %>
         </td>
-        <td><%= link_to food.name, food %></td>
-        <td>タンパク質: <%= food.protein %></td>
-        <td>糖質: <%= food.carbohydrate %></td>
-        <td>脂質: <%= food.lipid %></td>
-        <td>ビタミン: <%= food.vitamin %></td>
-        <td><%= button_to "バスケットから削除", {:controller => :cart, :action => 'destroy', :food_id => food.id}, :method => :delete %></td>
+        <td class='tdfood'><%= link_to food.name, food %></td>
+        <td class='tdfood'>タンパク質: <%= food.protein %></td>
+        <td class='tdfood'>糖質: <%= food.carbohydrate %></td>
+        <td class='tdfood'>脂質: <%= food.lipid %></td>
+        <td class='tdfood'>ビタミン: <%= food.vitamin %></td>
+        <td class='tdfood'><%= button_to "バスケットから削除", {:controller => :cart, :action => 'destroy', :food_id => food.id}, :method => :delete, class: 'btn btn-danger btn-sm' %></td>
       </tr>
     <% end %>
   <% end %>
 </table>
-<%= button_to "バスケットを空にする", {:controller => :cart, :action => 'destroy'}, :method => :delete %>
-<%= button_to '選択した食材を使用したレシピをクックパッドで検索', cart_search_path(), form: {target: '_blank'} %>
+<br>
+<%= button_to "バスケットを空にする", {:controller => :cart, :action => 'destroy'}, :method => :delete, class: 'btn btn-danger btn-lg'%>
+<br>
+<%= button_to '選択した食材を使用したレシピをクックパッドで検索', cart_search_path(), form: { target: '_blank' }, class: 'btn btn-warning btn-lg' %>
