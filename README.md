@@ -1,4 +1,5 @@
 # クックパッドサマーインターン2020
+- [スライド](https://www.slideshare.net/secret/1KnOFYaH9fH2L4)
 
 # Usage
   
